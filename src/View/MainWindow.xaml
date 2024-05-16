@@ -1,0 +1,92 @@
+﻿<Window x:Class="View.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:View"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="900" Width="600">
+    <Border Grid.Row="1" Margin="20 0">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <StackPanel Orientation="Vertical" Grid.Row="0">
+                <TextBlock FontFamily="Consolas" HorizontalAlignment="Center"
+                           FontSize="50" FontWeight="ExtraBold">
+                    File Dominator
+                </TextBlock>
+
+                <ListBox x:Name="fileDirsListBox" 
+                    HorizontalAlignment="Stretch" Height="200">
+
+                </ListBox>
+                <StackPanel Orientation="Horizontal" Height="30"
+                    HorizontalAlignment="Right" >
+                    <Button Name="moveUpDirButton" Margin="5 0"
+                        Width="30" Content="˄" 
+                        FontSize="16" FontWeight="Bold" FontFamily="Arial">
+                        <Button.ToolTip>Mover Diretório para cima</Button.ToolTip>
+                    </Button>
+                    <Button Name="moveDownDirButton" Margin="5 0"
+                        Width="30" Content="˅" 
+                        FontSize="16" FontWeight="Bold" FontFamily="Arial">
+                        <Button.ToolTip>Mover Diretório para baixo</Button.ToolTip>
+                    </Button>
+                    <Button Name="addDirButton" Margin="5 0"
+                        Width="30" Content="+" 
+                        FontSize="16" FontWeight="Bold" FontFamily="Arial">
+                        <Button.ToolTip>Adicionar Diretório</Button.ToolTip>
+                    </Button>
+                    <Button Name="removePathButton" Margin="5 0"
+                        Width="30" Content="-"
+                        FontSize="16" FontWeight="Bold" FontFamily="Arial">
+                        <Button.ToolTip>Remover Diretório</Button.ToolTip>
+                    </Button>
+                </StackPanel>
+                <ListBox x:Name="filePatternsListBox" 
+                    HorizontalAlignment="Stretch" Height="200">
+
+                </ListBox>
+                <StackPanel Orientation="Horizontal" Height="30"
+                    HorizontalAlignment="Right" >
+                    <Button Name="moveUpFilePatternsButton" Margin="5 0"
+                        Width="30" Content="˄" 
+                        FontSize="16" FontWeight="Bold" FontFamily="Arial">
+                        <Button.ToolTip>Mover File Pattern para cima</Button.ToolTip>
+                    </Button>
+                    <Button Name="moveDownFilePatternsButton" Margin="5 0"
+                        Width="30" Content="˅" 
+                        FontSize="16" FontWeight="Bold" FontFamily="Arial">
+                        <Button.ToolTip>Mover File Pattern para baixo</Button.ToolTip>
+                    </Button>
+                    <Button Name="addFilePatternsButton" Margin="5 0"
+                        Width="30" Content="+" 
+                        FontSize="16" FontWeight="Bold" FontFamily="Arial">
+                        <Button.ToolTip>Adicionar File Pattern</Button.ToolTip>
+                    </Button>
+                    <Button Name="removeFilePatternsButton" Margin="5 0"
+                        Width="30" Content="-"
+                        FontSize="16" FontWeight="Bold" FontFamily="Arial">
+                        <Button.ToolTip>Remover File Pattern</Button.ToolTip>
+                    </Button>
+                </StackPanel>
+            </StackPanel>
+            <Border Grid.Row="1" Margin="0 5 0 20" Padding="10"
+                    BorderBrush="Black" BorderThickness="1"
+                    VerticalAlignment="Stretch">
+                <StackPanel Orientation="Horizontal" VerticalAlignment="Top">
+                    <Button Content="File List"
+                        Width="100" Height="30"/>
+                    <Button Content="Rename Files" Margin="5 0 0 0"
+                        Width="100" Height="30"/>
+                    <Button Content="Move Files" Margin="5 0 0 0"
+                        Width="100" Height="30"/>
+                    <Button Content="Delete Files" Margin="5 0 0 0"
+                        Width="100" Height="30"/>
+                </StackPanel>
+            </Border>
+        </Grid>
+    </Border>
+</Window>

@@ -1,0 +1,80 @@
+<mxfile host="Electron" modified="2024-05-16T01:43:24.394Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.6.8 Chrome/114.0.5735.289 Electron/25.5.0 Safari/537.36" version="21.6.8" etag="D62Hs5XtfaFNz4afZrj8" type="device">
+  <diagram id="-PsGgc9VmzoPEk__EC2H" name="Page-1">
+    <mxGraphModel dx="968" dy="596" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="6" style="edgeStyle=none;html=1;endArrow=none;endFill=0;" parent="1" source="2" target="7" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="240" y="305" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="13" style="edgeStyle=none;html=1;endArrow=none;endFill=0;endSize=16;targetPerimeterSpacing=1;" parent="1" source="2" target="12" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="16" style="edgeStyle=none;html=1;endArrow=none;endFill=0;endSize=16;targetPerimeterSpacing=1;" parent="1" source="2" target="14" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="17" style="edgeStyle=none;html=1;endArrow=none;endFill=0;endSize=16;targetPerimeterSpacing=1;" parent="1" source="2" target="15" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="22" style="edgeStyle=none;html=1;endArrow=none;endFill=0;endSize=16;targetPerimeterSpacing=1;" parent="1" source="2" target="20" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="23" style="edgeStyle=none;html=1;endArrow=none;endFill=0;endSize=16;targetPerimeterSpacing=1;" parent="1" source="2" target="19" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="24" style="edgeStyle=none;html=1;endArrow=none;endFill=0;endSize=16;targetPerimeterSpacing=1;" parent="1" source="2" target="18" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cS2rrbCAkiv21liBk-sJ-31" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;endArrow=none;endFill=0;" edge="1" parent="1" source="2" target="cS2rrbCAkiv21liBk-sJ-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2" value="User" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" parent="1" vertex="1">
+          <mxGeometry x="70" y="410" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7" value="Rename Files" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="370" y="370" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="12" value="Move Files" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="300" y="640" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="14" value="Rename Folders" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="170" y="750" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="15" value="Move Folders" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="15" y="780" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="18" value="Add Directory" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="15" y="90" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="19" value="Add FilePattern" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="180" y="130" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="20" value="Delete Files" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="370" y="510" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="27" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="edgeStyle=none;html=1;entryX=0.915;entryY=0.244;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=open;endFill=0;endSize=16;targetPerimeterSpacing=1;dashed=1;" parent="1" source="25" target="7" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="25" value="New Pattern" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="560" y="260" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="28" style="edgeStyle=none;html=1;dashed=1;endArrow=open;endFill=0;endSize=16;targetPerimeterSpacing=1;" parent="1" source="26" target="7" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="29" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="28" vertex="1" connectable="0">
+          <mxGeometry x="-0.2402" y="1" relative="1" as="geometry">
+            <mxPoint x="-9" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="26" value="Add Suffix or Prefix" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="570" y="490" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="cS2rrbCAkiv21liBk-sJ-29" value="View Filtered Files List" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="310" y="250" width="140" height="70" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
