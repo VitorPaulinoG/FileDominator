@@ -35,7 +35,7 @@
                         <Button.ToolTip>Mover Diretório para baixo</Button.ToolTip>
                     </Button>
                     <Button Name="addDirButton" Margin="5 0"
-                        Width="30" Content="+" 
+                        Width="30" Content="+" Click="AddDirButton_Click"
                         FontSize="16" FontWeight="Bold" FontFamily="Arial">
                         <Button.ToolTip>Adicionar Diretório</Button.ToolTip>
                     </Button>
@@ -76,15 +76,17 @@
             <Border Grid.Row="1" Margin="0 5 0 20" Padding="10"
                     BorderBrush="Black" BorderThickness="1"
                     VerticalAlignment="Stretch">
-                <StackPanel Orientation="Horizontal" VerticalAlignment="Top">
-                    <Button Content="File List"
-                        Width="100" Height="30"/>
-                    <Button Content="Rename Files" Margin="5 0 0 0"
-                        Width="100" Height="30"/>
-                    <Button Content="Move Files" Margin="5 0 0 0"
-                        Width="100" Height="30"/>
-                    <Button Content="Delete Files" Margin="5 0 0 0"
-                        Width="100" Height="30"/>
+                <StackPanel Orientation="Vertical">
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Top">
+                        <Button Content="File List"
+                            Width="100" Height="30"/>
+                        <Button Content="Rename Files" Margin="5 0 0 0"
+                            Width="100" Height="30"/>
+                        <Button Content="Move Files" Margin="5 0 0 0"
+                            Width="100" Height="30"/>
+                        <Button Content="Delete Files" Margin="5 0 0 0"
+                            Width="100" Height="30"/>
+                    </StackPanel>
                 </StackPanel>
             </Border>
         </Grid>
