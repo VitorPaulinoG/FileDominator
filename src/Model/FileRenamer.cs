@@ -8,10 +8,9 @@ public static class FileRenamer
         string path, string oldPattern, string newPattern
     )
     {
-        string directory = path.Substring(0, path.LastIndexOf('\\') + 1);
         string oldFileName = path.Substring(path.LastIndexOf('\\'));
         string newFileName = Regex.Replace(oldFileName, oldPattern, newPattern);
-        string newPath = directory + newFileName;
+        string newPath = path.Replace(oldFileName, newFileName);
         File.Move(path, newPath);
     }
     public static void RenameWithNewPattern (
@@ -25,6 +24,5 @@ public static class FileRenamer
                 RenameWithNewPattern(path, oldPattern, newPattern);
             }
         }
-
     }
 }
