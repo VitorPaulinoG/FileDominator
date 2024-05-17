@@ -25,4 +25,22 @@ public static class FileRenamer
             }
         }
     }
+    public static void RenameWithSuffix (
+        string path, string suffix
+    )
+    {
+        string oldFileName = path.Substring(path.LastIndexOf('\\'));
+        oldFileName.Substring(0, oldFileName.IndexOf('.'));
+        string newFileName = oldFileName
+            .Substring(0, oldFileName.IndexOf('.')) + suffix;
+        string newPath = path.Replace(oldFileName, newFileName);
+        File.Move(path, newPath);
+    }
+    public static void RenameWithSuffix (List<string> paths, string suffix)
+    {
+        foreach (var path in paths)
+        {
+            RenameWithSuffix (path, suffix);
+        }
+    }
 }
