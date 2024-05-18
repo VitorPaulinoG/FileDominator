@@ -40,4 +40,64 @@ public partial class MainWindow : Window
         folderManager.Multiselect = true; 
         folderManager.ShowDialog();
     }
+
+    private void RemovePathButton_Click(object sender, RoutedEventArgs e)
+    {
+
+    }
+
+    private void MoveUpDirButton_Click(object sender, RoutedEventArgs e)
+    {
+
+    }
+
+    private void MoveDownDirButton_Click(object sender, RoutedEventArgs e)
+    {
+
+    }
+
+    private void MoveUpFilePatternsButton_Click(object sender, RoutedEventArgs e)
+    {
+
+    }
+
+    private void MoveDownFilePatternsButton_Click(object sender, RoutedEventArgs e)
+    {
+
+    }
+
+    private void AddFilePatternsButton_Click(object sender, RoutedEventArgs e)
+    {
+
+    }
+
+    private void RemoveFilePatternsButton_Click(object sender, RoutedEventArgs e)
+    {
+
+    }
+
+    private void FileListButton_Click(object sender, RoutedEventArgs e)
+    {
+
+    }
+
+    private void RenameFilesButton_Click(object sender, RoutedEventArgs e)
+    {
+
+    }
+
+    private void MoveFilesButton_Click(object sender, RoutedEventArgs e)
+    {
+
+    }
+
+    private void CopyFilesButton_Click(object sender, RoutedEventArgs e)
+    {
+
+    }
+
+    private void DeleteFilesButton_Click(object sender, RoutedEventArgs e)
+    {
+
+    }
 }

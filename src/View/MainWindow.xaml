@@ -25,12 +25,12 @@
                 <StackPanel Orientation="Horizontal" Height="30"
                     HorizontalAlignment="Right" >
                     <Button Name="moveUpDirButton" Margin="5 0"
-                        Width="30" Content="˄" 
+                        Width="30" Content="˄" Click="MoveUpDirButton_Click"
                         FontSize="16" FontWeight="Bold" FontFamily="Arial">
                         <Button.ToolTip>Mover Diretório para cima</Button.ToolTip>
                     </Button>
                     <Button Name="moveDownDirButton" Margin="5 0"
-                        Width="30" Content="˅" 
+                        Width="30" Content="˅" Click="MoveDownDirButton_Click"
                         FontSize="16" FontWeight="Bold" FontFamily="Arial">
                         <Button.ToolTip>Mover Diretório para baixo</Button.ToolTip>
                     </Button>
@@ -40,7 +40,7 @@
                         <Button.ToolTip>Adicionar Diretório</Button.ToolTip>
                     </Button>
                     <Button Name="removePathButton" Margin="5 0"
-                        Width="30" Content="-"
+                        Width="30" Content="-" Click="RemovePathButton_Click"
                         FontSize="16" FontWeight="Bold" FontFamily="Arial">
                         <Button.ToolTip>Remover Diretório</Button.ToolTip>
                     </Button>
@@ -52,22 +52,22 @@
                 <StackPanel Orientation="Horizontal" Height="30"
                     HorizontalAlignment="Right" >
                     <Button Name="moveUpFilePatternsButton" Margin="5 0"
-                        Width="30" Content="˄" 
+                        Width="30" Content="˄" Click="MoveUpFilePatternsButton_Click"
                         FontSize="16" FontWeight="Bold" FontFamily="Arial">
                         <Button.ToolTip>Mover File Pattern para cima</Button.ToolTip>
                     </Button>
                     <Button Name="moveDownFilePatternsButton" Margin="5 0"
-                        Width="30" Content="˅" 
+                        Width="30" Content="˅" Click="MoveDownFilePatternsButton_Click"
                         FontSize="16" FontWeight="Bold" FontFamily="Arial">
                         <Button.ToolTip>Mover File Pattern para baixo</Button.ToolTip>
                     </Button>
                     <Button Name="addFilePatternsButton" Margin="5 0"
-                        Width="30" Content="+" 
+                        Width="30" Content="+" Click="AddFilePatternsButton_Click"
                         FontSize="16" FontWeight="Bold" FontFamily="Arial">
                         <Button.ToolTip>Adicionar File Pattern</Button.ToolTip>
                     </Button>
                     <Button Name="removeFilePatternsButton" Margin="5 0"
-                        Width="30" Content="-"
+                        Width="30" Content="-" Click="RemoveFilePatternsButton_Click"
                         FontSize="16" FontWeight="Bold" FontFamily="Arial">
                         <Button.ToolTip>Remover File Pattern</Button.ToolTip>
                     </Button>
@@ -78,15 +78,19 @@
                     VerticalAlignment="Stretch">
                 <StackPanel Orientation="Vertical">
                     <StackPanel Orientation="Horizontal" VerticalAlignment="Top">
-                        <Button Content="File List"
+                        <Button Name="fileListButton" Content="File List"
+                            Width="100" Height="30" Click="FileListButton_Click"/>
+                        <Button Name="renameFilesButton"  Content="Rename Files" 
+                            Margin="5 0 0 0" Click="RenameFilesButton_Click"
                             Width="100" Height="30"/>
-                        <Button Content="Rename Files" Margin="5 0 0 0"
+                        <Button Name="moveFilesButton" Content="Move Files" 
+                            Margin="5 0 0 0" Click="MoveFilesButton_Click"
                             Width="100" Height="30"/>
-                        <Button Content="Move Files" Margin="5 0 0 0"
+                        <Button Name="copyFilesButton" Content="Copy Files" 
+                            Margin="5 0 0 0" Click="CopyFilesButton_Click"
                             Width="100" Height="30"/>
-                        <Button Content="Copy Files" Margin="5 0 0 0"
-                            Width="100" Height="30"/>
-                        <Button Content="Delete Files" Margin="5 0 0 0"
+                        <Button Name="deleteFilesButton" Content="Delete Files" 
+                            Margin="5 0 0 0" Click="deleteFilesButton_Click"
                             Width="100" Height="30"/>
                     </StackPanel>
                 </StackPanel>
