@@ -84,6 +84,8 @@
                             Width="100" Height="30"/>
                         <Button Content="Move Files" Margin="5 0 0 0"
                             Width="100" Height="30"/>
+                        <Button Content="Copy Files" Margin="5 0 0 0"
+                            Width="100" Height="30"/>
                         <Button Content="Delete Files" Margin="5 0 0 0"
                             Width="100" Height="30"/>
                     </StackPanel>
