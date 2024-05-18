@@ -8,7 +8,7 @@ public static class FileRenamer
         string path, string oldPattern, string newPattern
     )
     {
-        string oldFileName = path.Substring(path.LastIndexOf('\\'));
+        string oldFileName = Path.GetFileNameWithoutExtension(path); 
         string newFileName = Regex.Replace(oldFileName, oldPattern, newPattern);
         string newPath = path.Replace(oldFileName, newFileName);
         File.Move(path, newPath);
@@ -29,10 +29,8 @@ public static class FileRenamer
         string path, string suffix
     )
     {
-        string oldFileName = path.Substring(path.LastIndexOf('\\'));
-        oldFileName.Substring(0, oldFileName.IndexOf('.'));
-        string newFileName = oldFileName
-            .Substring(0, oldFileName.IndexOf('.')) + suffix;
+        string oldFileName = Path.GetFileNameWithoutExtension(path);
+        string newFileName = oldFileName + suffix;
         string newPath = path.Replace(oldFileName, newFileName);
         File.Move(path, newPath);
     }
