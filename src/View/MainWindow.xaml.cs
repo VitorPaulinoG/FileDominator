@@ -39,8 +39,5 @@ public partial class MainWindow : Window
         OpenFolderDialog folderManager = new OpenFolderDialog();
         folderManager.Multiselect = true; 
         folderManager.ShowDialog();
-        Directories.AddRange(folderManager.FolderNames);
-        // Usar posteriormente DataBinding
-        fileDirsListBox.ItemsSource = _directories;
     }
 }
