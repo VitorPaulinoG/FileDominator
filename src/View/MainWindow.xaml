@@ -19,9 +19,9 @@
                 </TextBlock>
 
                 <ListBox x:Name="fileDirsListBox" 
-                    HorizontalAlignment="Stretch" Height="200">
+                    HorizontalAlignment="Stretch" Height="200"
+                    SelectionMode="Multiple"/>
 
-                </ListBox>
                 <StackPanel Orientation="Horizontal" Height="30"
                     HorizontalAlignment="Right" >
                     <Button Name="moveUpDirButton" Margin="5 0"
@@ -46,9 +46,8 @@
                     </Button>
                 </StackPanel>
                 <ListBox x:Name="filePatternsListBox" 
-                    HorizontalAlignment="Stretch" Height="200">
-
-                </ListBox>
+                    HorizontalAlignment="Stretch" Height="200"
+                    SelectionMode="Multiple"/>
                 <StackPanel Orientation="Horizontal" Height="30"
                     HorizontalAlignment="Right" >
                     <Button Name="moveUpFilePatternsButton" Margin="5 0"
