@@ -19,6 +19,7 @@ namespace View
     /// </summary>
     public partial class FilePatternMenu : Window
     {
+        public string InputPattern { get; set; } = string.Empty;
         public FilePatternMenu()
         {
             InitializeComponent();
@@ -26,7 +27,8 @@ namespace View
 
         private void ConfirmButton_Click(object sender, RoutedEventArgs e)
         {
-
+            InputPattern = inputPatternTextBox.Text;
+            this.Close();
         }
     }
 }

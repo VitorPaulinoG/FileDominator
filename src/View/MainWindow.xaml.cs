@@ -76,7 +76,20 @@ public partial class MainWindow : Window
 
     private void AddFilePatternsButton_Click(object sender, RoutedEventArgs e)
     {
-
+        FilePatternMenu filePatternMenu = new FilePatternMenu();
+        filePatternMenu.Top = this.Top;
+        filePatternMenu.Left = this.Left;
+        filePatternMenu.ShowDialog();
+        string inputPattern = filePatternMenu.InputPattern;
+        if (!string.IsNullOrEmpty(inputPattern) && !string.IsNullOrWhiteSpace(inputPattern)) 
+        {
+            FilePatterns.Add(inputPattern);
+            filePatternsListBox.Items.Clear();
+            foreach (var item in FilePatterns)
+            {
+                filePatternsListBox.Items.Add(item);
+            }
+        } 
     }
 
     private void RemoveFilePatternsButton_Click(object sender, RoutedEventArgs e)
