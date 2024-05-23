@@ -28,7 +28,17 @@ public partial class MainWindow : Window
         {
             _directories = value;
         }
-    }  
+    }
+
+
+    private List<string> _filePatterns = new List<string>() ;
+
+    public List<string> FilePatterns
+    {
+        get { return _filePatterns; }
+        set { _filePatterns = value; }
+    }
+
     public MainWindow()
     {
         InitializeComponent();
