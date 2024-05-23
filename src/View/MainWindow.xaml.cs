@@ -51,7 +51,16 @@ public partial class MainWindow : Window
 
     private void RemoveDirButton_Click(object sender, RoutedEventArgs e)
     {
-
+        // Usar Data Biding Aqui (Quando Souber)
+        foreach (var item in fileDirsListBox.SelectedItems)
+        {
+            Directories.Remove((string)item);
+        }
+        fileDirsListBox.Items.Clear();
+        foreach (string item in Directories)
+        {
+            fileDirsListBox.Items.Add(item);
+        }
     }
 
     private void MoveUpDirButton_Click(object sender, RoutedEventArgs e)
