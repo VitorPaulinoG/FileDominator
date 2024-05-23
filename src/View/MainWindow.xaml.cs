@@ -39,6 +39,14 @@ public partial class MainWindow : Window
         OpenFolderDialog folderManager = new OpenFolderDialog();
         folderManager.Multiselect = true; 
         folderManager.ShowDialog();
+        Directories.AddRange(folderManager.FolderNames);
+        
+        // Usar Data Biding Aqui (Quando Souber)
+        fileDirsListBox.Items.Clear();
+        foreach (string item in Directories)
+        {
+            fileDirsListBox.Items.Add(item);
+        }
     }
 
     private void RemovePathButton_Click(object sender, RoutedEventArgs e)

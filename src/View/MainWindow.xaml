@@ -90,7 +90,7 @@
                             Margin="5 0 0 0" Click="CopyFilesButton_Click"
                             Width="100" Height="30"/>
                         <Button Name="deleteFilesButton" Content="Delete Files" 
-                            Margin="5 0 0 0" Click="deleteFilesButton_Click"
+                            Margin="5 0 0 0" Click="DeleteFilesButton_Click"
                             Width="100" Height="30"/>
                     </StackPanel>
                 </StackPanel>
