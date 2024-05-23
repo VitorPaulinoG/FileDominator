@@ -94,7 +94,15 @@ public partial class MainWindow : Window
 
     private void RemoveFilePatternsButton_Click(object sender, RoutedEventArgs e)
     {
-
+        foreach (var item in filePatternsListBox.SelectedItems)
+        {
+            FilePatterns.Remove((string)item);
+        }
+        filePatternsListBox.Items.Clear();
+        foreach (string item in FilePatterns)
+        {
+            filePatternsListBox.Items.Add(item);
+        }
     }
 
     private void FileListButton_Click(object sender, RoutedEventArgs e)
