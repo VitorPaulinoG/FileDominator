@@ -49,7 +49,7 @@ public partial class MainWindow : Window
         }
     }
 
-    private void RemovePathButton_Click(object sender, RoutedEventArgs e)
+    private void RemoveDirButton_Click(object sender, RoutedEventArgs e)
     {
 
     }

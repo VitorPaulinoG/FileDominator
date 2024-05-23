@@ -40,7 +40,7 @@
                         <Button.ToolTip>Adicionar Diretório</Button.ToolTip>
                     </Button>
                     <Button Name="removePathButton" Margin="5 0"
-                        Width="30" Content="-" Click="RemovePathButton_Click"
+                        Width="30" Content="-" Click="RemoveDirButton_Click"
                         FontSize="16" FontWeight="Bold" FontFamily="Arial">
                         <Button.ToolTip>Remover Diretório</Button.ToolTip>
                     </Button>
