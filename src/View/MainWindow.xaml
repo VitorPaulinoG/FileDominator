@@ -24,16 +24,6 @@
 
                 <StackPanel Orientation="Horizontal" Height="30"
                     HorizontalAlignment="Right" >
-                    <Button Name="moveUpDirButton" Margin="5 0"
-                        Width="30" Content="˄" Click="MoveUpDirButton_Click"
-                        FontSize="16" FontWeight="Bold" FontFamily="Arial">
-                        <Button.ToolTip>Mover Diretório para cima</Button.ToolTip>
-                    </Button>
-                    <Button Name="moveDownDirButton" Margin="5 0"
-                        Width="30" Content="˅" Click="MoveDownDirButton_Click"
-                        FontSize="16" FontWeight="Bold" FontFamily="Arial">
-                        <Button.ToolTip>Mover Diretório para baixo</Button.ToolTip>
-                    </Button>
                     <Button Name="addDirButton" Margin="5 0"
                         Width="30" Content="+" Click="AddDirButton_Click"
                         FontSize="16" FontWeight="Bold" FontFamily="Arial">
@@ -50,16 +40,6 @@
                     SelectionMode="Multiple"/>
                 <StackPanel Orientation="Horizontal" Height="30"
                     HorizontalAlignment="Right" >
-                    <Button Name="moveUpFilePatternsButton" Margin="5 0"
-                        Width="30" Content="˄" Click="MoveUpFilePatternsButton_Click"
-                        FontSize="16" FontWeight="Bold" FontFamily="Arial">
-                        <Button.ToolTip>Mover File Pattern para cima</Button.ToolTip>
-                    </Button>
-                    <Button Name="moveDownFilePatternsButton" Margin="5 0"
-                        Width="30" Content="˅" Click="MoveDownFilePatternsButton_Click"
-                        FontSize="16" FontWeight="Bold" FontFamily="Arial">
-                        <Button.ToolTip>Mover File Pattern para baixo</Button.ToolTip>
-                    </Button>
                     <Button Name="addFilePatternsButton" Margin="5 0"
                         Width="30" Content="+" Click="AddFilePatternsButton_Click"
                         FontSize="16" FontWeight="Bold" FontFamily="Arial">

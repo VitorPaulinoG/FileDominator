@@ -63,25 +63,6 @@ public partial class MainWindow : Window
         }
     }
 
-    private void MoveUpDirButton_Click(object sender, RoutedEventArgs e)
-    {
-
-    }
-
-    private void MoveDownDirButton_Click(object sender, RoutedEventArgs e)
-    {
-
-    }
-
-    private void MoveUpFilePatternsButton_Click(object sender, RoutedEventArgs e)
-    {
-
-    }
-
-    private void MoveDownFilePatternsButton_Click(object sender, RoutedEventArgs e)
-    {
-
-    }
 
     private void AddFilePatternsButton_Click(object sender, RoutedEventArgs e)
     {
