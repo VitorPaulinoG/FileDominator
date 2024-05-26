@@ -1,4 +1,5 @@
 ﻿using Microsoft.Win32;
+using FileDominator.Model;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -10,7 +11,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace View;
+namespace FileDominator.View;
 
 /// <summary>
 /// Interaction logic for MainWindow.xaml
@@ -107,6 +108,8 @@ public partial class MainWindow : Window
 
     private void FileListButton_Click(object sender, RoutedEventArgs e)
     {
+        //List<string> FilterFiles(List<string> directories, List<string> patterns)
+        
 
     }
 
