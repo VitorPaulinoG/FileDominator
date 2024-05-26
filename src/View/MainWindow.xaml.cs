@@ -10,6 +10,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using View.Menus;
 
 namespace FileDominator.View;
 
@@ -38,6 +39,13 @@ public partial class MainWindow : Window
     {
         get { return _filePatterns; }
         set { _filePatterns = value; }
+    }
+
+    private List<string> _matchingFiles = new List<string>(); 
+    public List<string> MatchingFiles
+    {
+        get { return _matchingFiles; }
+        set { _matchingFiles = value; }
     }
 
     public MainWindow()
@@ -109,7 +117,14 @@ public partial class MainWindow : Window
     private void FileListButton_Click(object sender, RoutedEventArgs e)
     {
         //List<string> FilterFiles(List<string> directories, List<string> patterns)
-        
+        MatchingFiles = FileFilter.FilterFiles(Directories, FilePatterns);
+        MatchingFilesList matchingFilesList = new MatchingFilesList(MatchingFiles);
+        matchingFilesList.Top = this.Top;
+        matchingFilesList.Left = this.Left;
+        //matchingFilesList.Closed += (s, args) => this.Show();
+        //this.Hide();
+        matchingFilesList.ShowDialog();
+
 
     }
 
