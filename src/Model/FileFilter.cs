@@ -6,7 +6,7 @@ public static class FileFilter
     public static List<string> FilterFiles(string directory, string pattern)
     {
         List<string> filePaths = new(); 
-        var fileNames = Directory.GetFiles(directory, pattern).ToList();
+        var fileNames = Directory.GetFiles(directory, $"*{pattern}*").ToList();
         return fileNames;
     }
 
@@ -21,7 +21,8 @@ public static class FileFilter
                 filePaths.AddRange(FilterFiles(directory, pattern));
             }
         }
-
-        return filePaths;
+        var nonDuplicatedFiles = filePaths.ToHashSet();
+        // Verificar como melhorar esse algoritmo
+        return nonDuplicatedFiles.ToList();
     }
 }
